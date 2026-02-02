@@ -20,9 +20,9 @@
 
 </div>
 
-[SpaceMV-CoAI-Wp-PC-Frontend](https://github.com/tianxunweixiao/SpaceMV-CoAI-Wp-PC-Frontend/tree/main)是由成都天巡微小卫星科技有限责任公司研发的产业星球运营智能体之SpaceMV-CoAI-Wp（企业官网）PC端展示项目，作为SpaceMV-CoAI产业星球运营智能体中SpaceMV-CoAI-Wp（企业官网）模块的前端PC端展示组件，负责将后台管理的官网内容以现代化、响应式的方式呈现给用户，实现官网内容的实时同步展示。
+[SpaceMV-CoAI-Wp-PC-Frontend](https://github.com/tianxunweixiao/SpaceMV-CoAI-Wp-PC-Frontend)是由成都天巡微小卫星科技有限责任公司研发的产业星球运营智能体之SpaceMV-CoAI-Wp（企业官网）PC端展示项目，作为SpaceMV-CoAI产业星球运营智能体中SpaceMV-CoAI-Wp（企业官网）模块的前端PC端展示组件，负责将后台管理的官网内容以现代化、响应式的方式呈现给用户，实现官网内容的实时同步展示。
 
-[SpaceMV-CoAI-Wp-PC-Frontend](https://github.com/tianxunweixiao/SpaceMV-CoAI-Wp-PC-Frontend/tree/main)作为产业星球运营智能体之SpaceMV-CoAI-Wp（企业官网）PC端前端展示系统，具备响应式布局、内容实时同步展示功能，可将后台管理的SpaceMV-CoAI-Wp（企业官网）内容以现代化、美观的方式呈现给用户，还能通过优化的加载性能，为访问者提供流畅的浏览体验，助力提升品牌形象和用户转化率。
+[SpaceMV-CoAI-Wp-PC-Frontend](https://github.com/tianxunweixiao/SpaceMV-CoAI-Wp-PC-Frontend)作为产业星球运营智能体之SpaceMV-CoAI-Wp（企业官网）PC端前端展示系统，具备响应式布局、内容实时同步展示功能，可将后台管理的SpaceMV-CoAI-Wp（企业官网）内容以现代化、美观的方式呈现给用户，还能通过优化的加载性能，为访问者提供流畅的浏览体验，助力提升品牌形象和用户转化率。
 
 `SpaceMV-CoAI-Wp-PC-Frontend`作为产业星球运营智能体之SpaceMV-CoAI-Wp（企业官网）PC端前端展示系统，承担SpaceMV-CoAI-Wp（企业官网）内容现代化呈现的关键职能。
 
