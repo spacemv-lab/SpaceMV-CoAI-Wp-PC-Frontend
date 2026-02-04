@@ -35,6 +35,7 @@
 * [贡献指南](#贡献指南)
 * [许可证](#许可证)
 * [联系方式](#联系方式)
+* [贡献者](#贡献者)
 * [待办事项](#待办事项)
 
 ## 核心模块
@@ -310,10 +311,18 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 * **Email**: code@spacemv.com  
 * **Issues**: [GitHub Issues](https://github.com/tianxunweixiao/SpaceMV-CoAI-Wp-PC-Frontend/issues)
+* **Discussions**: [GitHub Discussions](https://github.com/tianxunweixiao/SpaceMV-CoAI-Wp-PC-Frontend/discussions)
 
 更多信息可关注公司微信公众号：
+
 <img width="106" height="106" alt="image" src="https://github.com/user-attachments/assets/69a02ad0-422c-422a-bf5f-9b7890cf31ab" />
 
+
+## 贡献者
+
+<div>
+  <img src="./public/github.png" style="cursor: pointer;" width="50" height="50" alt="spacemvwnn" title="spacemvwnn" />
+</div>
 
 ## 待办事项
 

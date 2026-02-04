@@ -33,7 +33,9 @@
 * [Features](#features)
 * [Quick Start](#quick-start)
 * [Contribution Guide](#contribution-guide)
+* [License](#license)
 * [Contact Information](#contact-information)
+* [Contributors](#contributors)
 * [Todo List](#todo-list)
 
 ## Core Modules
@@ -280,16 +282,6 @@ We warmly welcome community developers to participate in the construction of the
 * **Style Management**: Use Less variables and mixins, combined with Tailwind CSS utility classes, to ensure style consistency and maintainability.
 * **Testing**: Add appropriate test cases for new features to ensure code quality.
 
-## Contact Information
-
-If you have any questions, suggestions, or business cooperation needs, please contact the project maintenance team.
-
-* **Email**: code@spacemv.com  
-* **Issues**: [GitHub Issues](https://github.com/tianxunweixiao/SpaceMV-CoAI-Wp-PC-Frontend/issues)
-
-For more information, please follow our company's WeChat official account:
-<img width="106" height="106" alt="image" src="https://github.com/user-attachments/assets/69a02ad0-422c-422a-bf5f-9b7890cf31ab" />
-
 ## License
 
 This project is licensed under the MIT License.
@@ -312,6 +304,24 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Contact Information
+
+If you have any questions, suggestions, or business cooperation needs, please contact the project maintenance team.
+
+* **Email**: code@spacemv.com  
+* **Issues**: [GitHub Issues](https://github.com/tianxunweixiao/SpaceMV-CoAI-Wp-PC-Frontend/issues)
+* **Discussions**: [GitHub Discussions](https://github.com/tianxunweixiao/SpaceMV-CoAI-Wp-PC-Frontend/discussions)
+
+For more information, please follow our company's WeChat official account:
+
+<img width="106" height="106" alt="image" src="https://github.com/user-attachments/assets/69a02ad0-422c-422a-bf5f-9b7890cf31ab" />
+
+## Contributors
+
+<div>
+  <img src="./public/github.png" style="cursor: pointer;" width="50" height="50" alt="spacemvwnn" title="spacemvwnn" />
+</div>
 
 ## Todo List
 
