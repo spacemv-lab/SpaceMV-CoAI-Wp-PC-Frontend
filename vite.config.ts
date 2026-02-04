@@ -15,6 +15,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // @ts-ignore - Vitest 配置
   base: '/',
   resolve: {
     alias: {
@@ -71,6 +72,30 @@ export default defineConfig({
         target: 'http://localhost:8080',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/prod-api/, '')
+      }
+    }
+  },
+  // @ts-ignore - Vitest 配置
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/setupTests.ts',
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      include: [
+        'src/api/mainPage/index.ts',
+        'src/api/product/index.ts',
+        'src/store/modules/menuReducer/index.ts',
+        'src/services/axiosConfig.ts',
+        'src/components/carousel/index.tsx'
+      ],
+      exclude: ['src/**/*.d.ts', 'src/main.tsx', 'src/App.tsx', 'src/router/**', 'src/styles/**'],
+      thresholds: {
+        lines: 80,
+        functions: 80,
+        branches: 80,
+        statements: 80
       }
     }
   }
