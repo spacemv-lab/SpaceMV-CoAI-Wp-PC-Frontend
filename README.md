@@ -263,7 +263,9 @@ npm run preview
 
 ## 贡献指南
 
-我们非常欢迎社区开发者参与 SpaceMV-CoAI-Wp-PC-Frontend 项目的建设！如果您有任何改进建议或发现了 Bug，请遵循以下流程：
+我们非常欢迎社区开发者参与 SpaceMV-CoAI-Wp-PC-Frontend 项目的建设！所有贡献者必须同意[贡献者许可协议](CLA.md)，才能参与对SpaceMV-CoAI-Wp-PC-Frontend的贡献。
+
+如果您有任何改进建议或发现了 Bug，请遵循以下流程：
 
 1. **Fork 本仓库**：点击右上角的 Fork 按钮将项目复制到您的 GitHub 账户。  
 2. **创建分支**：从 main 分支切出一个新分支用于开发。  

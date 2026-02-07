@@ -263,7 +263,9 @@ npm run preview
 
 ## Contribution Guide
 
-We warmly welcome community developers to participate in the construction of the SpaceMV-CoAI-Wp-PC-Frontend project! If you have any improvement suggestions or find any bugs, please follow the following process:
+We warmly welcome community developers to participate in the construction of the SpaceMV-CoAI-Wp-PC-Frontend project! All contributors must agree to the [Contributor License Agreement](CLA.md) to participate in contributing to SpaceMV-CoAI-Wp-PC-Frontend.
+
+If you have any improvement suggestions or find any bugs, please follow the following process:
 
 1. **Fork this repository**: Click the Fork button in the upper right corner to copy the project to your GitHub account.  
 2. **Create a branch**: Create a new branch from the main branch for development.  
