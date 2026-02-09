@@ -68,12 +68,6 @@ function Header({ isPreview = false }: HeaderProps) {
     if (import.meta.env.VITE_ENV === 'intranet') return 'intranet'
     if (import.meta.env.VITE_ENV === 'extranet') return 'extranet'
     
-    // 其次通过URL域名检测
-    const hostname = window.location.hostname
-    if (hostname.includes('intranet') || hostname.includes('internal') || hostname.includes('corp')) {
-      return 'intranet'
-    }
-    
     // 默认视为外网
     return 'extranet'
   }
