@@ -154,6 +154,51 @@
         opacity: 1;
         visibility: visible;
       }
+
+      .dropdown-btn {
+        position: relative;
+      }
+
+      .dropdown-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin-top: 8px;
+        min-width: 120px;
+        padding: 8px 0;
+        background-color: #fff;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        z-index: var(--z-index-max);
+        opacity: 1;
+        visibility: visible;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -6px;
+          left: 12px;
+          width: 12px;
+          height: 12px;
+          background: #fff;
+          transform: rotate(45deg);
+          box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
+        }
+      }
+
+      .dropdown-item {
+        padding: 10px 16px;
+        font-size: var(--font-16);
+        color: var(--cr-gray);
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: var(--bg-gray-light);
+          color: var(--primary-color);
+        }
+      }
     }
   }
 }

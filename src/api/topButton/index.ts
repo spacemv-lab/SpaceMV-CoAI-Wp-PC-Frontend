@@ -11,19 +11,28 @@ export enum ButtonStatus {
 // 按钮类型枚举 - 根据实际接口buttonType字段映射
 export enum ButtonType {
   text = '1', // 文字按钮
-  image = '2' // 图片按钮
+  image = '2', // 图片按钮
+  dropList = '3' // 下拉按钮
+}
+
+// 下拉按钮项接口
+export interface DropButtonItem {
+  text: string; // 按钮文本
+  link: string; // 跳转链接
+  state: ButtonStatus; // 状态：1-外部链接，2-内部跳转，3-nav路由，4-开发中
 }
 
 // 按钮接口类型 - 根据实际接口返回字段定义
 export interface TopButton {
   buttonId: string;
-  buttonType: ButtonType; // 按钮类型：1-文字按钮，2-图片按钮
+  buttonType: ButtonType; // 按钮类型：1-文字按钮，2-图片按钮，3-下拉按钮
   buttonText?: string; // 按钮文本
   backgroundColor?: string; // 背景颜色
   jumpUrl: string; // 跳转链接
   imageUrl?: string; // 图片URL
   isShow: string; // 是否对外显示：1-显示，0-隐藏
   state: ButtonStatus; // 状态：1-外部链接，2-内部跳转，3-nav路由，4-开发中
+  dropButtonList?: DropButtonItem[]; // 下拉列表（如果是下拉按钮）
 }
 
 // 通用响应类型定义 - 根据实际接口返回格式

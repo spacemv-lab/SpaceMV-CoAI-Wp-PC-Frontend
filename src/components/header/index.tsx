@@ -61,6 +61,7 @@ function Header({ isPreview = false }: HeaderProps) {
   
   const [buttons, setButtons] = useState<TopButton[]>([])
   const [tooltip, setTooltip] = useState<{show: boolean; text: string; buttonId: string}>({show: false, text: '', buttonId: ''})
+  const [dropdown, setDropdown] = useState<{show: boolean; buttonId: string}>({show: false, buttonId: ''})
 
   // 检测当前运行环境
   const getCurrentEnvironment = (): 'intranet' | 'extranet' => {
@@ -105,6 +106,20 @@ function Header({ isPreview = false }: HeaderProps) {
 
   const handleTooltipHide = () => {
     setTooltip({show: false, text: '', buttonId: ''})
+    setDropdown({show: false, buttonId: ''})
+  }
+
+  const handleDropdownShow = (buttonId: string) => {
+    setDropdown({show: true, buttonId})
+  }
+
+  const handleDropdownHide = () => {
+    setDropdown({show: false, buttonId: ''})
+  }
+
+  const handleDropButtonClick = (state: ButtonStatus, link: string) => {
+    handleBtnClick(state, link)
+    handleDropdownHide()
   }
 
   function handleMenuClick(path: string, index: number) {
@@ -204,11 +219,19 @@ function Header({ isPreview = false }: HeaderProps) {
             .map((item) => (
             <div
               className={classNames('btn', {
-                'image-btn': item.buttonType === ButtonType.image
+                'image-btn': item.buttonType === ButtonType.image,
+                'dropdown-btn': item.dropButtonList && item.dropButtonList.length > 0
               })}
               key={item.buttonId}
-              onClick={() => handleBtnClick(item.state, item.jumpUrl)}
-              onMouseEnter={() => item.buttonType === ButtonType.image && item.buttonText && handleTooltipShow(item.buttonText, item.buttonId)}
+              onClick={() => !item.dropButtonList || item.dropButtonList.length === 0 ? handleBtnClick(item.state, item.jumpUrl) : null}
+              onMouseEnter={() => {
+                if (item.buttonType === ButtonType.image && item.buttonText) {
+                  handleTooltipShow(item.buttonText, item.buttonId)
+                }
+                if (item.dropButtonList && item.dropButtonList.length > 0) {
+                  handleDropdownShow(item.buttonId)
+                }
+              }}
               onMouseLeave={handleTooltipHide}
               style={{
                 ...(item.buttonType === ButtonType.text && item.backgroundColor 
@@ -231,6 +254,19 @@ function Header({ isPreview = false }: HeaderProps) {
                     </div>
                   )}
                 </>
+              )}
+              {item.dropButtonList && item.dropButtonList.length > 0 && dropdown.show && dropdown.buttonId === item.buttonId && (
+                <div className="dropdown-list">
+                  {item.dropButtonList.map((dropItem, index) => (
+                    <div
+                      key={index}
+                      className="dropdown-item"
+                      onClick={() => handleDropButtonClick(dropItem.state, dropItem.link)}
+                    >
+                      {dropItem.text}
+                    </div>
+                  ))}
+                </div>
               )}
             </div>
           ))}
